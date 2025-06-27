@@ -29,10 +29,8 @@ nav {
     position: fixed;
     z-index: 3;
     background-color: bisque;
-    left: -240px;
+    left: 0px;
     opacity: 0.9;
-
-
 }
 nav ul{
     display: block;
