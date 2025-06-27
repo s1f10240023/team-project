@@ -1,3 +1,86 @@
-.red {
-    color:red;
+body{
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*header#menuBtn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30%;
+    height: 30%;
+
+}*/
+
+
+
+
+
+
+
+nav {
+    display: block;
+    width: 240px;
+    height: 100%;
+    position: fixed;
+    z-index: 3;
+    background-color: bisque;
+    left: -240px;
+    opacity: 0.9;
+
+
+}
+nav ul{
+    display: block;
+    margin: 100px,0,0,0;
+    padding: 0;
+
+}
+
+nav li {
+    list-style: none;
+    left: 0;
+    top: 0;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    transition: all 1s;
+    
+    
+}
+
+nav li:hover{
+    background-color: #e4e4e4;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    
+}
+
+.map-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+
+}
+
+
+
+.map{
+    width: 80%;
+    height: auto;
+    max-width: 600px;
+    display: block;
+    margin-left: 10%;
+    
+
 }
