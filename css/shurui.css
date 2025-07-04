@@ -1,8 +1,8 @@
 body {
     font-family: 'Yu Gothic', 'Meiryo', sans-serif;
     line-height: 1.7;
-    color: #333; 
-    background-color: #f0ebe4; 
+    color: #333;
+    background-color: #f0ebe4;
     margin: 0;
     padding: 0;
 }
@@ -15,7 +15,7 @@ body {
 
 
 header {
-    background-color: #4a2a1a; 
+    background-color: #4a2a1a;
     color: #fff;
     padding: 15px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -24,7 +24,7 @@ header {
 header h1 {
     margin: 0;
     font-size: 1.8em;
-    float: left; 
+    float: left;
 }
 
 header h1 a {
@@ -45,7 +45,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #f0ebe4; 
+    color: #f0ebe4;
     text-decoration: none;
     font-weight: bold;
     padding: 5px 0;
@@ -53,7 +53,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #d4a779; 
+    color: #d4a779;
 }
 
 
@@ -78,7 +78,7 @@ section {
 
 section h2 {
     font-size: 2.5em;
-    color: #6f4e37; 
+    color: #6f4e37;
     text-align: center;
     margin-bottom: 30px;
     padding-bottom: 15px;
@@ -87,17 +87,17 @@ section h2 {
 
 section h3 {
     font-size: 2em;
-    color: #8b5e3d; 
+    color: #8b5e3d;
     margin-top: 40px;
     margin-bottom: 20px;
 }
 
 section h4 {
     font-size: 1.4em;
-    color: #a07a5f; 
+    color: #a07a5f;
     margin-top: 25px;
     margin-bottom: 15px;
-    border-left: 5px solid #d4a779; 
+    border-left: 5px solid #d4a779;
     padding-left: 10px;
 }
 
@@ -107,11 +107,11 @@ section p {
 }
 
 section p strong {
-    color: #6f4e37; 
+    color: #6f4e37;
 }
 
 section ul {
-    list-style: none; 
+    list-style: none;
     padding: 0;
     margin-bottom: 20px;
 }
@@ -126,9 +126,9 @@ section ul li {
 }
 
 section ul li strong {
-    color: #8b5e3d; 
+    color: #8b5e3d;
     font-size: 1.1em;
-    display: block; 
+    display: block;
     margin-bottom: 5px;
 }
 
@@ -139,8 +139,8 @@ section ul ul {
 }
 
 section ul ul li {
-    background-color: transparent; 
-    border-left: none; 
+    background-color: transparent;
+    border-left: none;
     padding: 5px 0;
     margin-bottom: 5px;
     box-shadow: none;
@@ -150,6 +150,15 @@ section ul ul li {
 
 
 p strong:last-child {
-    color: #a07a5f; 
+    color: #a07a5f;
     font-size: 1.2em;
+}
+
+li {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
