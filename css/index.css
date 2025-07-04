@@ -170,13 +170,12 @@ nav a:hover {
 }
 
 .pin {
-    transition: all 0.2s;
-    transform-box: fill-box;
-    transform-origin: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .pin:hover {
-    transform: scale(1.2);
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -264,13 +263,4 @@ section ul ul li {
 p strong:last-child {
     color: #a07a5f;
     font-size: 1.2em;
-}
-
-li {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-li:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
