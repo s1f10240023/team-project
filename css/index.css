@@ -1,47 +1,50 @@
-body{
+body {
     font-size: 16px;
 }
 
 .hero {
-  position: relative;
-  width: 100%;
-  height: 80vh; /* 高さは必要に応じて調整 */
-  overflow: visible;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    /* 高さは必要に応じて調整 */
+    overflow: visible;
 }
 
 /* 背景画像 */
 .hero img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 20px 20px 40px 40px; /* 上は直線、下だけ角丸 */
-  
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 40px 40px;
+    /* 上は直線、下だけ角丸 */
+
 }
 
 .wave {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
 }
 
 /* タイトルとメニューボタン */
-.hero h1, .hero #menuBtn {
-  position: absolute;
-  z-index: 2;
-  color: white;
+.hero h1,
+.hero #menuBtn {
+    position: absolute;
+    z-index: 2;
+    color: white;
 }
 
 .hero h1 {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3.3rem;
-  text-shadow: 0 10px 20px rgba(0,0,0,0.5);
-  letter-spacing: 0.1rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.3rem;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.1rem;
 }
 
 /*header#menuBtn{
@@ -74,12 +77,13 @@ nav {
     border-radius: 0 10px 10px 0;
 }
 
-.active#sidebar {
+#sidebar {
     left: 0px;
 }
-nav ul{
+
+nav ul {
     display: block;
-    margin: 100px,0,0,0;
+    margin: 100px, 0, 0, 0;
     padding: 0;
 
 }
@@ -92,11 +96,11 @@ nav li {
     padding-top: 1rem;
     padding-bottom: 0.5rem;
     transition: all 1s;
-    
-    
+
+
 }
 
-nav li:hover{
+nav li:hover {
     background-color: #e4e4e4;
 
 }
@@ -106,7 +110,7 @@ nav a {
     color: black;
     border-bottom: 1px solid black;
     transition: all 0.2s;
-    
+
 }
 
 nav a:hover {
@@ -133,7 +137,7 @@ nav a:hover {
     position: absolute;
     top: 30px;
     right: 30px;
-    transition:all 0.2s;
+    transition: all 0.2s;
 }
 
 #menuBtn:hover {
@@ -152,22 +156,118 @@ nav a:hover {
 
 
 
-.map{
+.map {
     width: 80%;
     height: auto;
     max-width: 600px;
     display: block;
     margin-left: 10%;
-    
+
 
 }
 
-.pin{
+.pin {
     transition: all 0.2s;
     transform-box: fill-box;
-  transform-origin: center;
+    transform-origin: center;
 }
 
-.pin:hover{
+.pin:hover {
     transform: scale(1.2);
+}
+
+
+section {
+    background-color: #fdfafa;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+    padding: 30px 40px;
+}
+
+section h2 {
+    font-size: 2.5em;
+    color: #6f4e37;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #a07a5f;
+}
+
+section h3 {
+    font-size: 2em;
+    color: #8b5e3d;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+section h4 {
+    font-size: 1.4em;
+    color: #a07a5f;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-left: 5px solid #d4a779;
+    padding-left: 10px;
+}
+
+section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+section p strong {
+    color: #6f4e37;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+section ul li {
+    background-color: #fdfafa;
+    border-left: 4px solid #d4a779;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+section ul li strong {
+    color: #8b5e3d;
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+section ul ul {
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+section ul ul li {
+    background-color: transparent;
+    border-left: none;
+    padding: 5px 0;
+    margin-bottom: 5px;
+    box-shadow: none;
+    font-size: 0.95em;
+    color: #555;
+}
+
+
+p strong:last-child {
+    color: #a07a5f;
+    font-size: 1.2em;
+}
+
+li {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
