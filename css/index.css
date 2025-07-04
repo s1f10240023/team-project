@@ -71,7 +71,7 @@ nav {
     height: 100%;
     position: fixed;
     z-index: 10;
-    background-color: bisque;
+    background-color: #a07a5f;
     left: -240px;
     opacity: 0.92;
     transition: all 0.3s;
@@ -103,7 +103,7 @@ nav li {
 }
 
 nav li:hover {
-    background-color: #a07a5f;
+    background-color: #4a2a1a;
 
 
 }
