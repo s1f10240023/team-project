@@ -1,5 +1,6 @@
 body {
     font-size: 16px;
+    background-color: #fdfafa;
 }
 
 .hero {
@@ -95,6 +96,7 @@ nav li {
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
+
     transition: all 1s;
 
 
@@ -102,6 +104,7 @@ nav li {
 
 nav li:hover {
     background-color: #e4e4e4;
+
 
 }
 
@@ -114,7 +117,7 @@ nav a {
 }
 
 nav a:hover {
-    color: brown;
+    color: #fdfafa;
 }
 
 #mask {
