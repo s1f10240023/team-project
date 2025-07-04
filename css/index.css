@@ -2,11 +2,48 @@ body{
     font-size: 16px;
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.hero {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* 高さは必要に応じて調整 */
+  overflow: visible;
 }
+
+/* 背景画像 */
+.hero img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 40px 40px; /* 上は直線、下だけ角丸 */
+  
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+}
+
+/* タイトルとメニューボタン */
+.hero h1, .hero #menuBtn {
+  position: absolute;
+  z-index: 2;
+  color: white;
+}
+
+.hero h1 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.3rem;
+  text-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  letter-spacing: 0.1rem;
+}
+
 /*header#menuBtn{
     position: absolute;
     top: 30px;
@@ -22,15 +59,23 @@ header {
 
 
 
+
+
 nav {
     display: block;
     width: 240px;
     height: 100%;
     position: fixed;
-    z-index: 3;
+    z-index: 10;
     background-color: bisque;
+    left: -240px;
+    opacity: 0.92;
+    transition: all 0.3s;
+    border-radius: 0 10px 10px 0;
+}
+
+.active#sidebar {
     left: 0px;
-    opacity: 0.9;
 }
 nav ul{
     display: block;
@@ -60,7 +105,41 @@ nav a {
     text-decoration: none;
     color: black;
     border-bottom: 1px solid black;
+    transition: all 0.2s;
     
+}
+
+nav a:hover {
+    color: brown;
+}
+
+#mask {
+    display: none;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    position: fixed;
+    z-index: 8;
+}
+
+#mask.active {
+    display: block;
+    opacity: 0.5;
+}
+
+#menuBtn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    transition:all 0.2s;
+}
+
+#menuBtn:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+
 }
 
 .map-wrapper {
@@ -81,4 +160,14 @@ nav a {
     margin-left: 10%;
     
 
+}
+
+.pin{
+    transition: all 0.2s;
+    transform-box: fill-box;
+  transform-origin: center;
+}
+
+.pin:hover{
+    transform: scale(1.2);
 }
