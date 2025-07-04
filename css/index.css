@@ -78,7 +78,7 @@ nav {
     border-radius: 0 10px 10px 0;
 }
 
-#sidebar {
+#sidebar.active {
     left: 0px;
 }
 
@@ -97,13 +97,13 @@ nav li {
     padding-top: 1rem;
     padding-bottom: 0.5rem;
 
-    transition: all 1s;
+    transition: all 0.5s;
 
 
 }
 
 nav li:hover {
-    background-color: #e4e4e4;
+    background-color: #a07a5f;
 
 
 }
