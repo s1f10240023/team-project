@@ -78,7 +78,7 @@ nav {
     border-radius: 0 10px 10px 0;
 }
 
-#sidebar.active {
+.active#sidebar {
     left: 0px;
 }
 
@@ -180,7 +180,7 @@ nav a:hover {
 
 
 section {
-    background-color: #fdfafa;
+    background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     margin-bottom: 30px;
